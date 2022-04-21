@@ -17,6 +17,11 @@
 		794641AC27E89A21007523D9 /* CustomShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794641AB27E89A21007523D9 /* CustomShapes.swift */; };
 		795C538A27E8C2E700A51E68 /* GenericClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C538927E8C2E700A51E68 /* GenericClass.swift */; };
 		795C538C27E8CA2800A51E68 /* ViewBuilderClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C538B27E8CA2800A51E68 /* ViewBuilderClass.swift */; };
+		796F331227EA2C9700712BE7 /* CombineFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331127EA2C9700712BE7 /* CombineFuture.swift */; };
+		796F331427EA335C00712BE7 /* PreferenceKeyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331327EA335C00712BE7 /* PreferenceKeyClass.swift */; };
+		796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */; };
+		796F331927EA3A1300712BE7 /* ScrollViewPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331827EA3A1300712BE7 /* ScrollViewPreferenceKey.swift */; };
+		799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */; };
 		79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */; };
 		79EAB3B327E8A1E700F77383 /* CustomCurves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB3B227E8A1E700F77383 /* CustomCurves.swift */; };
 		79EAB3B527E8B06F00F77383 /* CustomShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB3B427E8B06F00F77383 /* CustomShapeAnimation.swift */; };
@@ -34,6 +39,11 @@
 		794641AB27E89A21007523D9 /* CustomShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapes.swift; sourceTree = "<group>"; };
 		795C538927E8C2E700A51E68 /* GenericClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericClass.swift; sourceTree = "<group>"; };
 		795C538B27E8CA2800A51E68 /* ViewBuilderClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderClass.swift; sourceTree = "<group>"; };
+		796F331127EA2C9700712BE7 /* CombineFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFuture.swift; sourceTree = "<group>"; };
+		796F331327EA335C00712BE7 /* PreferenceKeyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyClass.swift; sourceTree = "<group>"; };
+		796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyClass.swift; sourceTree = "<group>"; };
+		796F331827EA3A1300712BE7 /* ScrollViewPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPreferenceKey.swift; sourceTree = "<group>"; };
+		799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableBootCamp.swift; sourceTree = "<group>"; };
 		79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineClass.swift; sourceTree = "<group>"; };
 		79EAB3B227E8A1E700F77383 /* CustomCurves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurves.swift; sourceTree = "<group>"; };
 		79EAB3B427E8B06F00F77383 /* CustomShapeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeAnimation.swift; sourceTree = "<group>"; };
@@ -89,6 +99,7 @@
 		794641A627E88E83007523D9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				796F331527EA37A200712BE7 /* PreferenceKeyClass */,
 				794641A427E88E76007523D9 /* CustomModifier.swift */,
 				794641A727E891E5007523D9 /* CustomButtonStyle.swift */,
 				794641A927E894C8007523D9 /* CustomTransltionClass.swift */,
@@ -98,8 +109,20 @@
 				795C538927E8C2E700A51E68 /* GenericClass.swift */,
 				795C538B27E8CA2800A51E68 /* ViewBuilderClass.swift */,
 				79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */,
+				796F331127EA2C9700712BE7 /* CombineFuture.swift */,
+				799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		796F331527EA37A200712BE7 /* PreferenceKeyClass */ = {
+			isa = PBXGroup;
+			children = (
+				796F331327EA335C00712BE7 /* PreferenceKeyClass.swift */,
+				796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */,
+				796F331827EA3A1300712BE7 /* ScrollViewPreferenceKey.swift */,
+			);
+			path = PreferenceKeyClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,16 +196,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				794641AC27E89A21007523D9 /* CustomShapes.swift in Sources */,
+				796F331427EA335C00712BE7 /* PreferenceKeyClass.swift in Sources */,
 				79EAB3B527E8B06F00F77383 /* CustomShapeAnimation.swift in Sources */,
+				796F331227EA2C9700712BE7 /* CombineFuture.swift in Sources */,
 				795C538A27E8C2E700A51E68 /* GenericClass.swift in Sources */,
 				795C538C27E8CA2800A51E68 /* ViewBuilderClass.swift in Sources */,
 				794641A527E88E76007523D9 /* CustomModifier.swift in Sources */,
 				794641AA27E894C8007523D9 /* CustomTransltionClass.swift in Sources */,
+				796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */,
+				799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */,
 				79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */,
 				7946419927E88E53007523D9 /* ContentView.swift in Sources */,
 				794641A827E891E5007523D9 /* CustomButtonStyle.swift in Sources */,
 				7946419727E88E53007523D9 /* SwiftThinkingAdvancedApp.swift in Sources */,
 				79EAB3B327E8A1E700F77383 /* CustomCurves.swift in Sources */,
+				796F331927EA3A1300712BE7 /* ScrollViewPreferenceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
