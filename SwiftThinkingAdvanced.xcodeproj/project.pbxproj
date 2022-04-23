@@ -17,6 +17,8 @@
 		794641AC27E89A21007523D9 /* CustomShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794641AB27E89A21007523D9 /* CustomShapes.swift */; };
 		795C538A27E8C2E700A51E68 /* GenericClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C538927E8C2E700A51E68 /* GenericClass.swift */; };
 		795C538C27E8CA2800A51E68 /* ViewBuilderClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C538B27E8CA2800A51E68 /* ViewBuilderClass.swift */; };
+		796D6DAB28148BCF001B8DD8 /* UIViewControllerRepresentableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D6DAA28148BCF001B8DD8 /* UIViewControllerRepresentableClass.swift */; };
+		796D6DB12814931D001B8DD8 /* DependencyInjectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D6DB02814931D001B8DD8 /* DependencyInjectionClass.swift */; };
 		796F331227EA2C9700712BE7 /* CombineFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331127EA2C9700712BE7 /* CombineFuture.swift */; };
 		796F331427EA335C00712BE7 /* PreferenceKeyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331327EA335C00712BE7 /* PreferenceKeyClass.swift */; };
 		796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */; };
@@ -39,6 +41,8 @@
 		794641AB27E89A21007523D9 /* CustomShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapes.swift; sourceTree = "<group>"; };
 		795C538927E8C2E700A51E68 /* GenericClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericClass.swift; sourceTree = "<group>"; };
 		795C538B27E8CA2800A51E68 /* ViewBuilderClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderClass.swift; sourceTree = "<group>"; };
+		796D6DAA28148BCF001B8DD8 /* UIViewControllerRepresentableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentableClass.swift; sourceTree = "<group>"; };
+		796D6DB02814931D001B8DD8 /* DependencyInjectionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionClass.swift; sourceTree = "<group>"; };
 		796F331127EA2C9700712BE7 /* CombineFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFuture.swift; sourceTree = "<group>"; };
 		796F331327EA335C00712BE7 /* PreferenceKeyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyClass.swift; sourceTree = "<group>"; };
 		796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyClass.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */,
 				796F331127EA2C9700712BE7 /* CombineFuture.swift */,
 				799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */,
+				796D6DAA28148BCF001B8DD8 /* UIViewControllerRepresentableClass.swift */,
+				796D6DB02814931D001B8DD8 /* DependencyInjectionClass.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -200,9 +206,11 @@
 				79EAB3B527E8B06F00F77383 /* CustomShapeAnimation.swift in Sources */,
 				796F331227EA2C9700712BE7 /* CombineFuture.swift in Sources */,
 				795C538A27E8C2E700A51E68 /* GenericClass.swift in Sources */,
+				796D6DAB28148BCF001B8DD8 /* UIViewControllerRepresentableClass.swift in Sources */,
 				795C538C27E8CA2800A51E68 /* ViewBuilderClass.swift in Sources */,
 				794641A527E88E76007523D9 /* CustomModifier.swift in Sources */,
 				794641AA27E894C8007523D9 /* CustomTransltionClass.swift in Sources */,
+				796D6DB12814931D001B8DD8 /* DependencyInjectionClass.swift in Sources */,
 				796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */,
 				799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */,
 				79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */,
