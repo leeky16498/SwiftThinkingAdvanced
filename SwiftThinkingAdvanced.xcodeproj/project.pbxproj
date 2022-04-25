@@ -28,6 +28,7 @@
 		796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */; };
 		796F331927EA3A1300712BE7 /* ScrollViewPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331827EA3A1300712BE7 /* ScrollViewPreferenceKey.swift */; };
 		799801A42816E575001E6B24 /* NewMockDataService_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799801A32816E575001E6B24 /* NewMockDataService_Test.swift */; };
+		799801A62816EA18001E6B24 /* NewMockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799801A52816EA18001E6B24 /* NewMockDataService.swift */; };
 		799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */; };
 		79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */; };
 		79EAB3B327E8A1E700F77383 /* CustomCurves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB3B227E8A1E700F77383 /* CustomCurves.swift */; };
@@ -68,6 +69,7 @@
 		796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyClass.swift; sourceTree = "<group>"; };
 		796F331827EA3A1300712BE7 /* ScrollViewPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPreferenceKey.swift; sourceTree = "<group>"; };
 		799801A32816E575001E6B24 /* NewMockDataService_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Test.swift; sourceTree = "<group>"; };
+		799801A52816EA18001E6B24 /* NewMockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
 		799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableBootCamp.swift; sourceTree = "<group>"; };
 		79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineClass.swift; sourceTree = "<group>"; };
 		79EAB3B227E8A1E700F77383 /* CustomCurves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurves.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				796D6DB42815E3B5001B8DD8 /* UnitTestingClass.swift */,
 				796D6DB62815E502001B8DD8 /* UnitTestingClassViewModel.swift */,
+				799801A52816EA18001E6B24 /* NewMockDataService.swift */,
 			);
 			path = UnitTesting;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				796D6DB12814931D001B8DD8 /* DependencyInjectionClass.swift in Sources */,
 				796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */,
 				799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */,
+				799801A62816EA18001E6B24 /* NewMockDataService.swift in Sources */,
 				79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */,
 				796D6DB52815E3B5001B8DD8 /* UnitTestingClass.swift in Sources */,
 				7946419927E88E53007523D9 /* ContentView.swift in Sources */,

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import Combine
+//Unit Testing 파트
 
 class UnitTestingClassViewModel : ObservableObject {
     
@@ -17,7 +18,7 @@ class UnitTestingClassViewModel : ObservableObject {
     let dataService : NewDataServiceProtocol
     var cancellables = Set<AnyCancellable>()
     
-    init(isPremium : Bool, dataService : NewDataServiceProtocol) {
+    init(isPremium : Bool, dataService : NewDataServiceProtocol = newMockDataService(items: nil)) {
         self.isPremium = isPremium
         self.dataService = dataService
     }
@@ -53,8 +54,8 @@ class UnitTestingClassViewModel : ObservableObject {
     }
     
     func downloadWithEscaping() {
-        dataService.downloadItemsWithEscaping { returnedItems in
-            self.dataArray = returnedItems
+        dataService.downloadItemsWithEscaping { [weak self] returnedItems in
+            self?.dataArray = returnedItems
         }
     }
     
@@ -62,8 +63,8 @@ class UnitTestingClassViewModel : ObservableObject {
         dataService.downloadItemsWithCombine()
             .sink { _ in
                 
-            } receiveValue: { returnedItems in
-                self.dataArray = returnedItems
+            } receiveValue: { [weak self] returnedItems in
+                self?.dataArray = returnedItems
             }
             .store(in: &cancellables)
 

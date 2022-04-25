@@ -23,7 +23,7 @@ struct UnitTestingClass: View {
     
     @StateObject private var vm : UnitTestingClassViewModel
     
-    init(isPremium : Bool, dataService : newDataService) {
+    init(isPremium : Bool, dataService : NewDataServiceProtocol) {
         _vm = StateObject(wrappedValue: UnitTestingClassViewModel(isPremium: isPremium, dataService: dataService))
     }
     

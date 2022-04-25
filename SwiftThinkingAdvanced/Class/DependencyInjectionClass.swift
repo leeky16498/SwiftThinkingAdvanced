@@ -14,38 +14,6 @@ import Combine
 //3. Can't swap out service
 //위의 문제들을 해결해 주는 것이 Dependency Injection이다.
 
-protocol NewDataServiceProtocol {
-    func downloadItemsWithEscaping(completion : @escaping (_ items : [String]) -> ())
-    func downloadItemsWithCombine() -> AnyPublisher<[String], Error>
-}
-
-class newDataService : NewDataServiceProtocol {
-    
-    let items : [String]
-    
-    init(items : [String]?) {
-        self.items = items ?? ["One", "Two", "Three"]
-    }
-    
-    func downloadItemsWithEscaping(completion : @escaping (_ items : [String]) -> ()) {
-        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
-            completion(self.items)
-        }
-    }
-    
-    func downloadItemsWithCombine() -> AnyPublisher<[String], Error> {
-        Just(items)
-            .tryMap({ publishedItems in
-                guard !publishedItems.isEmpty else {
-                    throw URLError(.badServerResponse)
-                }
-                return publishedItems
-            })
-            .eraseToAnyPublisher()
-    }
-}
-//Unit Testing 파트
-
 struct PostsModel : Identifiable, Codable {
     let userId : Int
     let id : Int

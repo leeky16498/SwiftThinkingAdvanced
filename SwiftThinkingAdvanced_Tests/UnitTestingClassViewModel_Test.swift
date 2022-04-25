@@ -51,8 +51,9 @@ class UnitTestingClassViewModel_Test: XCTestCase {
     func test_UnitTestingClassViewModel_isPremium_shouldBeInjectedValue() {
         //given
         let userIsPremium : Bool = Bool.random()
+        let dataService = newMockDataService(items: nil)
         //when
-        let vm = UnitTestingClassViewModel(isPremium: userIsPremium, dataService: <#NewDataServiceProtocol#>)
+        let vm = UnitTestingClassViewModel(isPremium: userIsPremium, dataService: dataService)
         //then
         XCTAssertEqual(vm.isPremium, userIsPremium)
     }
@@ -186,6 +187,28 @@ class UnitTestingClassViewModel_Test: XCTestCase {
     }
     
     func test_UnitTestingClassViewModel_downloadWithEscaping_shouldReturnItems() {
+        //given
+        let vm = UnitTestingClassViewModel(isPremium: Bool.random())
+        //when
+        let expectation = XCTestExpectation(description: "should return items after 3 secounds")
+
+        vm.$dataArray
+            .dropFirst()
+            .sink { returnedItems in
+                expectation.fulfill()
+            }
+            .store(in: &cancellables)
+        
+        vm.downloadWithEscaping()
+        
+        //then
+        wait(for: [expectation], timeout: 5) // 5초간 대기 시간을 부여한다.
+        XCTAssertGreaterThan(vm.dataArray.count, 0)
+        //에러가 나게 되는데 이유는 시간이 걸리는 비동기 함수이기 때문이다.
+        //asnycronised code에 대한 테스트 방법이다.
+    }
+    
+    func test_UnitTestingClassViewModel_downloadWithCombine_shouldReturnItems() {
         //given
         let vm = UnitTestingClassViewModel(isPremium: Bool.random())
         //when
