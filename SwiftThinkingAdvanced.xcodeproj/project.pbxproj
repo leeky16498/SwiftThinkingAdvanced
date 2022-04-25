@@ -19,15 +19,30 @@
 		795C538C27E8CA2800A51E68 /* ViewBuilderClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C538B27E8CA2800A51E68 /* ViewBuilderClass.swift */; };
 		796D6DAB28148BCF001B8DD8 /* UIViewControllerRepresentableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D6DAA28148BCF001B8DD8 /* UIViewControllerRepresentableClass.swift */; };
 		796D6DB12814931D001B8DD8 /* DependencyInjectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D6DB02814931D001B8DD8 /* DependencyInjectionClass.swift */; };
+		796D6DB52815E3B5001B8DD8 /* UnitTestingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D6DB42815E3B5001B8DD8 /* UnitTestingClass.swift */; };
+		796D6DB72815E502001B8DD8 /* UnitTestingClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D6DB62815E502001B8DD8 /* UnitTestingClassViewModel.swift */; };
+		796D6DC02815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D6DBF2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests.swift */; };
+		796D6DC72815E665001B8DD8 /* UnitTestingClassViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D6DC62815E665001B8DD8 /* UnitTestingClassViewModel_Test.swift */; };
 		796F331227EA2C9700712BE7 /* CombineFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331127EA2C9700712BE7 /* CombineFuture.swift */; };
 		796F331427EA335C00712BE7 /* PreferenceKeyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331327EA335C00712BE7 /* PreferenceKeyClass.swift */; };
 		796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */; };
 		796F331927EA3A1300712BE7 /* ScrollViewPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F331827EA3A1300712BE7 /* ScrollViewPreferenceKey.swift */; };
+		799801A42816E575001E6B24 /* NewMockDataService_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799801A32816E575001E6B24 /* NewMockDataService_Test.swift */; };
 		799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */; };
 		79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */; };
 		79EAB3B327E8A1E700F77383 /* CustomCurves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB3B227E8A1E700F77383 /* CustomCurves.swift */; };
 		79EAB3B527E8B06F00F77383 /* CustomShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB3B427E8B06F00F77383 /* CustomShapeAnimation.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		796D6DC12815E5C3001B8DD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7946418B27E88E53007523D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7946419227E88E53007523D9;
+			remoteInfo = SwiftThinkingAdvanced;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7946419327E88E53007523D9 /* SwiftThinkingAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftThinkingAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +58,16 @@
 		795C538B27E8CA2800A51E68 /* ViewBuilderClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderClass.swift; sourceTree = "<group>"; };
 		796D6DAA28148BCF001B8DD8 /* UIViewControllerRepresentableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentableClass.swift; sourceTree = "<group>"; };
 		796D6DB02814931D001B8DD8 /* DependencyInjectionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionClass.swift; sourceTree = "<group>"; };
+		796D6DB42815E3B5001B8DD8 /* UnitTestingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingClass.swift; sourceTree = "<group>"; };
+		796D6DB62815E502001B8DD8 /* UnitTestingClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingClassViewModel.swift; sourceTree = "<group>"; };
+		796D6DBD2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftThinkingAdvanced_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		796D6DBF2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftThinkingAdvanced_Tests.swift; sourceTree = "<group>"; };
+		796D6DC62815E665001B8DD8 /* UnitTestingClassViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingClassViewModel_Test.swift; sourceTree = "<group>"; };
 		796F331127EA2C9700712BE7 /* CombineFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFuture.swift; sourceTree = "<group>"; };
 		796F331327EA335C00712BE7 /* PreferenceKeyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyClass.swift; sourceTree = "<group>"; };
 		796F331627EA37B700712BE7 /* GeometryPreferenceKeyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyClass.swift; sourceTree = "<group>"; };
 		796F331827EA3A1300712BE7 /* ScrollViewPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPreferenceKey.swift; sourceTree = "<group>"; };
+		799801A32816E575001E6B24 /* NewMockDataService_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Test.swift; sourceTree = "<group>"; };
 		799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableBootCamp.swift; sourceTree = "<group>"; };
 		79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineClass.swift; sourceTree = "<group>"; };
 		79EAB3B227E8A1E700F77383 /* CustomCurves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurves.swift; sourceTree = "<group>"; };
@@ -61,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		796D6DBA2815E5C3001B8DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				7946419527E88E53007523D9 /* SwiftThinkingAdvanced */,
+				796D6DBE2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests */,
 				7946419427E88E53007523D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				7946419327E88E53007523D9 /* SwiftThinkingAdvanced.app */,
+				796D6DBD2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +133,7 @@
 		794641A627E88E83007523D9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				796D6DB82815E513001B8DD8 /* UnitTesting */,
 				796F331527EA37A200712BE7 /* PreferenceKeyClass */,
 				794641A427E88E76007523D9 /* CustomModifier.swift */,
 				794641A727E891E5007523D9 /* CustomButtonStyle.swift */,
@@ -119,6 +150,25 @@
 				796D6DB02814931D001B8DD8 /* DependencyInjectionClass.swift */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		796D6DB82815E513001B8DD8 /* UnitTesting */ = {
+			isa = PBXGroup;
+			children = (
+				796D6DB42815E3B5001B8DD8 /* UnitTestingClass.swift */,
+				796D6DB62815E502001B8DD8 /* UnitTestingClassViewModel.swift */,
+			);
+			path = UnitTesting;
+			sourceTree = "<group>";
+		};
+		796D6DBE2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				796D6DBF2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests.swift */,
+				796D6DC62815E665001B8DD8 /* UnitTestingClassViewModel_Test.swift */,
+				799801A32816E575001E6B24 /* NewMockDataService_Test.swift */,
+			);
+			path = SwiftThinkingAdvanced_Tests;
 			sourceTree = "<group>";
 		};
 		796F331527EA37A200712BE7 /* PreferenceKeyClass */ = {
@@ -151,6 +201,24 @@
 			productReference = 7946419327E88E53007523D9 /* SwiftThinkingAdvanced.app */;
 			productType = "com.apple.product-type.application";
 		};
+		796D6DBC2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796D6DC32815E5C3001B8DD8 /* Build configuration list for PBXNativeTarget "SwiftThinkingAdvanced_Tests" */;
+			buildPhases = (
+				796D6DB92815E5C3001B8DD8 /* Sources */,
+				796D6DBA2815E5C3001B8DD8 /* Frameworks */,
+				796D6DBB2815E5C3001B8DD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796D6DC22815E5C3001B8DD8 /* PBXTargetDependency */,
+			);
+			name = SwiftThinkingAdvanced_Tests;
+			productName = SwiftThinkingAdvanced_Tests;
+			productReference = 796D6DBD2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +231,10 @@
 				TargetAttributes = {
 					7946419227E88E53007523D9 = {
 						CreatedOnToolsVersion = 13.3;
+					};
+					796D6DBC2815E5C3001B8DD8 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 7946419227E88E53007523D9;
 					};
 				};
 			};
@@ -180,6 +252,7 @@
 			projectRoot = "";
 			targets = (
 				7946419227E88E53007523D9 /* SwiftThinkingAdvanced */,
+				796D6DBC2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +267,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		796D6DBB2815E5C3001B8DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -203,6 +283,7 @@
 			files = (
 				794641AC27E89A21007523D9 /* CustomShapes.swift in Sources */,
 				796F331427EA335C00712BE7 /* PreferenceKeyClass.swift in Sources */,
+				796D6DB72815E502001B8DD8 /* UnitTestingClassViewModel.swift in Sources */,
 				79EAB3B527E8B06F00F77383 /* CustomShapeAnimation.swift in Sources */,
 				796F331227EA2C9700712BE7 /* CombineFuture.swift in Sources */,
 				795C538A27E8C2E700A51E68 /* GenericClass.swift in Sources */,
@@ -214,6 +295,7 @@
 				796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */,
 				799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */,
 				79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */,
+				796D6DB52815E3B5001B8DD8 /* UnitTestingClass.swift in Sources */,
 				7946419927E88E53007523D9 /* ContentView.swift in Sources */,
 				794641A827E891E5007523D9 /* CustomButtonStyle.swift in Sources */,
 				7946419727E88E53007523D9 /* SwiftThinkingAdvancedApp.swift in Sources */,
@@ -222,7 +304,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		796D6DB92815E5C3001B8DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796D6DC72815E665001B8DD8 /* UnitTestingClassViewModel_Test.swift in Sources */,
+				796D6DC02815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests.swift in Sources */,
+				799801A42816E575001E6B24 /* NewMockDataService_Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		796D6DC22815E5C3001B8DD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7946419227E88E53007523D9 /* SwiftThinkingAdvanced */;
+			targetProxy = 796D6DC12815E5C3001B8DD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7946419F27E88E53007523D9 /* Debug */ = {
@@ -397,6 +497,42 @@
 			};
 			name = Release;
 		};
+		796D6DC42815E5C3001B8DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SRJSV34WBB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devleeky16498.SwiftThinkingAdvanced-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftThinkingAdvanced.app/SwiftThinkingAdvanced";
+			};
+			name = Debug;
+		};
+		796D6DC52815E5C3001B8DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SRJSV34WBB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devleeky16498.SwiftThinkingAdvanced-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftThinkingAdvanced.app/SwiftThinkingAdvanced";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,6 +550,15 @@
 			buildConfigurations = (
 				794641A227E88E53007523D9 /* Debug */,
 				794641A327E88E53007523D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796D6DC32815E5C3001B8DD8 /* Build configuration list for PBXNativeTarget "SwiftThinkingAdvanced_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796D6DC42815E5C3001B8DD8 /* Debug */,
+				796D6DC52815E5C3001B8DD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
