@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		793E979D281875F900C4B0C6 /* CloudKitClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E979C281875F900C4B0C6 /* CloudKitClass.swift */; };
+		793E97A12818766300C4B0C6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793E97A02818766300C4B0C6 /* CloudKit.framework */; };
+		793E97A328187E9500C4B0C6 /* CloudKitCRUDClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E97A228187E9500C4B0C6 /* CloudKitCRUDClass.swift */; };
 		7946419727E88E53007523D9 /* SwiftThinkingAdvancedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7946419627E88E53007523D9 /* SwiftThinkingAdvancedApp.swift */; };
 		7946419927E88E53007523D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7946419827E88E53007523D9 /* ContentView.swift */; };
 		7946419B27E88E53007523D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7946419A27E88E53007523D9 /* Assets.xcassets */; };
@@ -57,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		793E979C281875F900C4B0C6 /* CloudKitClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClass.swift; sourceTree = "<group>"; };
+		793E979E2818764200C4B0C6 /* SwiftThinkingAdvanced.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftThinkingAdvanced.entitlements; sourceTree = "<group>"; };
+		793E97A02818766300C4B0C6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		793E97A228187E9500C4B0C6 /* CloudKitCRUDClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCRUDClass.swift; sourceTree = "<group>"; };
 		7946419327E88E53007523D9 /* SwiftThinkingAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftThinkingAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7946419627E88E53007523D9 /* SwiftThinkingAdvancedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftThinkingAdvancedApp.swift; sourceTree = "<group>"; };
 		7946419827E88E53007523D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793E97A12818766300C4B0C6 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +125,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		793E979B281875E900C4B0C6 /* CloudKitClass */ = {
+			isa = PBXGroup;
+			children = (
+				793E979C281875F900C4B0C6 /* CloudKitClass.swift */,
+				793E97A228187E9500C4B0C6 /* CloudKitCRUDClass.swift */,
+			);
+			path = CloudKitClass;
+			sourceTree = "<group>";
+		};
+		793E979F2818766300C4B0C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				793E97A02818766300C4B0C6 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7946418A27E88E53007523D9 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +149,7 @@
 				796D6DBE2815E5C3001B8DD8 /* SwiftThinkingAdvanced_Tests */,
 				799801AF2816F1DE001E6B24 /* SwiftThinkingAdvanced_UITests */,
 				7946419427E88E53007523D9 /* Products */,
+				793E979F2818766300C4B0C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +166,7 @@
 		7946419527E88E53007523D9 /* SwiftThinkingAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				793E979E2818764200C4B0C6 /* SwiftThinkingAdvanced.entitlements */,
 				794641A627E88E83007523D9 /* Class */,
 				7946419627E88E53007523D9 /* SwiftThinkingAdvancedApp.swift */,
 				7946419827E88E53007523D9 /* ContentView.swift */,
@@ -160,6 +187,7 @@
 		794641A627E88E83007523D9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				793E979B281875E900C4B0C6 /* CloudKitClass */,
 				796D6DB82815E513001B8DD8 /* UnitTesting */,
 				799801A72816EE1C001E6B24 /* UITesting */,
 				796F331527EA37A200712BE7 /* PreferenceKeyClass */,
@@ -371,9 +399,11 @@
 				796D6DB12814931D001B8DD8 /* DependencyInjectionClass.swift in Sources */,
 				796F331727EA37B700712BE7 /* GeometryPreferenceKeyClass.swift in Sources */,
 				799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */,
+				793E97A328187E9500C4B0C6 /* CloudKitCRUDClass.swift in Sources */,
 				799801A62816EA18001E6B24 /* NewMockDataService.swift in Sources */,
 				79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */,
 				796D6DB52815E3B5001B8DD8 /* UnitTestingClass.swift in Sources */,
+				793E979D281875F900C4B0C6 /* CloudKitClass.swift in Sources */,
 				7946419927E88E53007523D9 /* ContentView.swift in Sources */,
 				794641A827E891E5007523D9 /* CustomButtonStyle.swift in Sources */,
 				7946419727E88E53007523D9 /* SwiftThinkingAdvancedApp.swift in Sources */,
@@ -538,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftThinkingAdvanced/SwiftThinkingAdvanced.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftThinkingAdvanced/Preview Content\"";
@@ -554,7 +585,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = devleeky16498.SwiftThinkingAdvanced;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devleeky16498.SwiftThinkingAdvanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -567,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftThinkingAdvanced/SwiftThinkingAdvanced.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftThinkingAdvanced/Preview Content\"";
@@ -583,7 +615,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = devleeky16498.SwiftThinkingAdvanced;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devleeky16498.SwiftThinkingAdvanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

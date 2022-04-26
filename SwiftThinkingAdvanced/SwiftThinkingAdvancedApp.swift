@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftThinkingAdvancedApp: App {
     var body: some Scene {
         WindowGroup {
-            UITestingClass()
+            CloudKitCRUDClass()
         }
     }
 }
