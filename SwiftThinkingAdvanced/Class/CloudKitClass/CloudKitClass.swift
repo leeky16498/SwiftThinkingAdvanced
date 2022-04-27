@@ -43,7 +43,6 @@ class CloudKitClassViewModel : ObservableObject {
     
     private func getiCloudStatus() {
         CKContainer.default().accountStatus { [weak self] returnedStatus, returnedError in
-            DispatchQueue.main.async {
                 switch returnedStatus {
                 case .couldNotDetermine:
                     self?.error = CloudKitError.iCloudAccountNotDetermined.localizedDescription
@@ -56,7 +55,7 @@ class CloudKitClassViewModel : ObservableObject {
                 case .temporarilyUnavailable:
                     self?.error = CloudKitError.iCloudAccountUnknown.localizedDescription
                 }
-            }
+
         }
     }
     

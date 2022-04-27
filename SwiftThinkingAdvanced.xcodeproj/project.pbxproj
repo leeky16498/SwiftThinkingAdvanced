@@ -37,6 +37,7 @@
 		799801B32816F1DE001E6B24 /* SwiftThinkingAdvanced_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799801B22816F1DE001E6B24 /* SwiftThinkingAdvanced_UITestsLaunchTests.swift */; };
 		799801BA2816F2B1001E6B24 /* UITestingClass_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799801B92816F2B1001E6B24 /* UITestingClass_UITests.swift */; };
 		799D3CAE2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */; };
+		79CF831C28192AC200D8BB64 /* CloudKitPushNotificationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF831B28192AC200D8BB64 /* CloudKitPushNotificationClass.swift */; };
 		79DB76CD27E8D67F004F0A7A /* AdvancedCombineClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */; };
 		79EAB3B327E8A1E700F77383 /* CustomCurves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB3B227E8A1E700F77383 /* CustomCurves.swift */; };
 		79EAB3B527E8B06F00F77383 /* CustomShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAB3B427E8B06F00F77383 /* CustomShapeAnimation.swift */; };
@@ -94,6 +95,7 @@
 		799801B22816F1DE001E6B24 /* SwiftThinkingAdvanced_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftThinkingAdvanced_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		799801B92816F2B1001E6B24 /* UITestingClass_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingClass_UITests.swift; sourceTree = "<group>"; };
 		799D3CAD2811F1EC00B93EC6 /* UIViewRepresentableBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableBootCamp.swift; sourceTree = "<group>"; };
+		79CF831B28192AC200D8BB64 /* CloudKitPushNotificationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPushNotificationClass.swift; sourceTree = "<group>"; };
 		79DB76CC27E8D67F004F0A7A /* AdvancedCombineClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineClass.swift; sourceTree = "<group>"; };
 		79EAB3B227E8A1E700F77383 /* CustomCurves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurves.swift; sourceTree = "<group>"; };
 		79EAB3B427E8B06F00F77383 /* CustomShapeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeAnimation.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				793E979C281875F900C4B0C6 /* CloudKitClass.swift */,
 				793E97A228187E9500C4B0C6 /* CloudKitCRUDClass.swift */,
+				79CF831B28192AC200D8BB64 /* CloudKitPushNotificationClass.swift */,
 			);
 			path = CloudKitClass;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			files = (
 				794641AC27E89A21007523D9 /* CustomShapes.swift in Sources */,
 				796F331427EA335C00712BE7 /* PreferenceKeyClass.swift in Sources */,
+				79CF831C28192AC200D8BB64 /* CloudKitPushNotificationClass.swift in Sources */,
 				796D6DB72815E502001B8DD8 /* UnitTestingClassViewModel.swift in Sources */,
 				79EAB3B527E8B06F00F77383 /* CustomShapeAnimation.swift in Sources */,
 				796F331227EA2C9700712BE7 /* CombineFuture.swift in Sources */,

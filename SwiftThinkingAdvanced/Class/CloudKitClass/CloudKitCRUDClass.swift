@@ -21,10 +21,18 @@ struct CloudKitCRUDClass: View {
                 
                 List {
                     ForEach(vm.fruits, id : \.self) { fruit in
-                        Text(fruit.name)
-                            .onTapGesture {
-                                vm.updateItems(fruit: fruit)
+                        HStack {
+                            Text(fruit.name)
+                            
+                            if let url = fruit.imageUrl, let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .frame(width : 50, height : 50)
                             }
+                        }
+                        .onTapGesture {
+                            vm.updateItems(fruit: fruit)
+                        }
                     }
                     .onDelete(perform: vm.deleteItem)
                 }
@@ -90,6 +98,21 @@ class CloudKitCRUDViewModel : ObservableObject {
         let newFruit = CKRecord(recordType: "Fruits")
         newFruit["name"] = name // 딕셔너리 key, value값을 생성
         
+        guard
+            let image = UIImage(named: "theRock"),
+            let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("theRock.jpg"),
+            let data = image.jpegData(compressionQuality: 1.0) else {return}
+        
+        do {
+            try data.write(to: url)
+            let asset = CKAsset(fileURL: url)
+            newFruit["image"] = asset
+        } catch {
+            print(error)
+        }
+        
+
+        
         saveItem(record: newFruit)//아이템을 데이터 베이스에 저장
     }
     
@@ -120,7 +143,9 @@ class CloudKitCRUDViewModel : ObservableObject {
             switch returnedResult {
             case .success(let record):
                 guard let name = record["name"] as? String else {return}
-                returnedItems.append(FruitModel(name: name, record: record))
+                let imageAsset = record["image"] as? CKAsset
+                let imageUrl = imageAsset?.fileURL
+                returnedItems.append(FruitModel(name: name, imageUrl: imageUrl, record: record))
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -156,11 +181,10 @@ class CloudKitCRUDViewModel : ObservableObject {
             }
         }
     }
-
-    
 }
 
 struct FruitModel : Hashable {
     let name : String
+    let imageUrl : URL?
     let record : CKRecord
 }
