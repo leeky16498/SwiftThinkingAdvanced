@@ -55,7 +55,6 @@ class CloudKitClassViewModel : ObservableObject {
                 case .temporarilyUnavailable:
                     self?.error = CloudKitError.iCloudAccountUnknown.localizedDescription
                 }
-
         }
     }
     
